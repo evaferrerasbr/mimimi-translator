@@ -19,6 +19,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+        <h1>Traductor mimimi</h1>
         <TextInput savedText={this.saveText} />
         <MIMIMITranslator preparedText={this.textToTranslate} />
       </div>
