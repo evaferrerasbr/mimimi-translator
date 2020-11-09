@@ -9,7 +9,7 @@ class MIMIMITranslator extends React.Component {
   render() {
     return (
       <p className="text">
-        {this.props.preparedText.replace(/[aeiou]/gi, 'i')}
+        {this.props.preparedText.replace(/[aeiou-áéíóú]/gi, 'i')}
       </p>
     );
   }
