@@ -7,7 +7,6 @@ class App extends React.Component {
   constructor() {
     super();
     this.textToTranslate = '';
-    this.prueba = '';
     this.saveText = this.saveText.bind(this);
   }
 
