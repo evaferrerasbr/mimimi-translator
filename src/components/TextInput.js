@@ -8,14 +8,17 @@ class TextInput extends React.Component {
   }
 
   handleChange(ev) {
-    const textWritten = ev.currentTarget.value;
-    return this.props.savedText(textWritten);
+    return this.props.handleChange(ev.currentTarget.value);
   }
 
   render() {
     return (
       <form>
-        <textarea onChange={this.handleChange} className="textarea"></textarea>
+        <textarea
+          onChange={this.handleChange}
+          value={this.props.value}
+          className="textarea"
+        ></textarea>
       </form>
     );
   }
